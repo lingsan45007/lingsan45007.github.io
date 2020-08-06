@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- saved from url=(0143)https://mysejahtera.malaysia.gov.my/qrscan/?lId=5ee0e09c75b7033ecd199042&ln=Pavilion_Kuala_Lumpur_Mall&eln=UGF2aWxpb24gS3VhbGEgTHVtcHVyIE1hbGw= -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Success</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="./Success_files/logo-chk.png">
+    <link href="./Success_files/styles.css" rel="stylesheet" type="text/css">
+    <link href="./Success_files/datepicker.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="form-group my-4">
+<p id="m1">Bilik1 / Nama Pegawai​</p>
+<p id="m2">Bilik2 / Nama Pegawai​</p>
+    
+</div>
+ <script type="text/javascript">
+ 
+  
+ function getCookie (name) {
+        var arr,reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)"); //匹配字段
+        if (arr = document.cookie.match(reg)) {
+            return unescape(arr[2]);
+        } else {
+            return null;
+        }
+    };
+	document.getElementById('m1').innerText = getCookie("name");
+	document.getElementById('m2').innerText = getCookie("contact");
+  </script>
+</body></html>

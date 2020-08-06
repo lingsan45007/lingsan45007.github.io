@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- saved from url=(0143)https://mysejahtera.malaysia.gov.my/qrscan/?lId=5ee0e09c75b7033ecd199042&ln=Pavilion_Kuala_Lumpur_Mall&eln=UGF2aWxpb24gS3VhbGEgTHVtcHVyIE1hbGw= -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Success</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="./Success_files/logo-chk.png">
+    <link href="./Success_files/styles.css" rel="stylesheet" type="text/css">
+    <link href="./Success_files/datepicker.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="form-group my-4">
+<form action="succ.htm?name=frank&contact=123456789" method="get" omsubmit='return submit()' id="test_form">
+<input  type="text" name="txtname" value="testname"/>
+<button class="btn btn-dark btn-block" type="submit" id="btnSubmit"  >
+       Hantar/Submit</button>
+</form>
+    
+</div>
+ <script type="text/javascript">
+  function setCookie (name, value) {
+        if (value) {
+        var days = 1; //定义30天
+        var exp = new Date();
+        exp.setTime(exp.getTime() + days * 24 * 60 * 60 * 1000*30);
+        // 写入Cookie, toGMTString将时间转换成字符串
+        document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString;
+        }
+    };
+ function submit(){
+        var form = document.getElementById('test_form');
+    //可在此修改input            
+    //进行下一步
+	
+    form.action ="succ.htm?name=frank&contact=123456789";
+    return true;
+    }
+  </script>
+
+</body></html>
